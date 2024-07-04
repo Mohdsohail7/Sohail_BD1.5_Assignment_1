@@ -97,6 +97,11 @@ app.get('/loyalty-points', (req, res) => {
 });
 
 const port = 8000;
+
+// welcome route
+app.get('/', (req, res) => {
+  res.send("This is my BD1.5 assignment-1")
+});
 app.listen(port, () => {
   console.log("server is running on port number is: " + port);
 });
