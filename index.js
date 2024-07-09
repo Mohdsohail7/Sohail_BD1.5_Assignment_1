@@ -75,7 +75,7 @@ app.get('/shipping-cost', (req, res) => {
   let distance = parseFloat(req.query.distance);
 
   if (distance != 0) {
-    let shippinpCost = weight * distance;
+    let shippinpCost = weight * distance * 0.1;
     res.send(shippinpCost.toString());
   } else {
     res.send("Invalid distance");
